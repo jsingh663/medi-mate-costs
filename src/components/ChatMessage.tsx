@@ -15,16 +15,19 @@ export const ChatMessage = ({ role, content, timestamp }: ChatMessageProps) => {
       isUser ? "justify-end" : "justify-start"
     )}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
-          <span className="text-primary font-semibold text-sm">M</span>
+        <div className="relative flex-shrink-0 mt-1">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur-sm opacity-30" />
+          <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-md">
+            <span className="text-primary-foreground font-bold text-sm">M</span>
+          </div>
         </div>
       )}
       
       <div className={cn(
-        "max-w-[70%] rounded-2xl px-4 py-3",
+        "max-w-[70%] rounded-3xl px-5 py-4 shadow-sm",
         isUser 
-          ? "bg-[hsl(var(--chat-user))] text-[hsl(var(--chat-user-foreground))]"
-          : "bg-[hsl(var(--chat-ai))] text-[hsl(var(--chat-ai-foreground))] border border-border"
+          ? "bg-gradient-to-br from-primary to-primary-dark text-primary-foreground"
+          : "bg-[hsl(var(--chat-ai))] text-[hsl(var(--chat-ai-foreground))] border-2 border-primary/20"
       )}>
         <p className="text-sm leading-relaxed whitespace-pre-wrap">{content}</p>
         {timestamp && (
@@ -33,8 +36,11 @@ export const ChatMessage = ({ role, content, timestamp }: ChatMessageProps) => {
       </div>
       
       {isUser && (
-        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-1">
-          <span className="text-primary-foreground font-semibold text-sm">U</span>
+        <div className="relative flex-shrink-0 mt-1">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent to-accent rounded-2xl blur-sm opacity-30" />
+          <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center shadow-md">
+            <span className="text-accent-foreground font-bold text-sm">U</span>
+          </div>
         </div>
       )}
     </div>

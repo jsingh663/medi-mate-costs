@@ -25,10 +25,12 @@ export const ChatInput = ({ onSend }: ChatInputProps) => {
   };
   
   return (
-    <div className="border-t bg-card px-6 py-4">
-      <div className="flex gap-3 items-end">
-        <Button variant="ghost" size="icon" className="flex-shrink-0">
-          <Paperclip className="h-5 w-5" />
+    <div className="relative border-t-2 border-primary/10 bg-gradient-to-t from-primary/5 to-white px-6 py-5 overflow-hidden">
+      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl translate-y-1/2" />
+      
+      <div className="flex gap-3 items-end relative z-10">
+        <Button variant="ghost" size="icon" className="flex-shrink-0 rounded-2xl hover:bg-primary/10 border-2 border-transparent hover:border-primary/20">
+          <Paperclip className="h-5 w-5 text-primary" />
         </Button>
         
         <div className="flex-1 relative">
@@ -37,21 +39,21 @@ export const ChatInput = ({ onSend }: ChatInputProps) => {
             onChange={(e) => setMessage(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Describe your condition or treatment..."
-            className="min-h-[50px] max-h-[120px] resize-none pr-12 rounded-2xl"
+            className="min-h-[56px] max-h-[120px] resize-none pr-12 rounded-3xl border-2 border-primary/20 focus:border-primary shadow-sm bg-white"
           />
         </div>
         
         <Button 
           onClick={handleSend}
           disabled={!message.trim()}
-          className="flex-shrink-0 rounded-xl"
+          className="flex-shrink-0 rounded-2xl bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg transition-all px-6 py-6"
         >
-          <Send className="h-4 w-4 mr-2" />
+          <Send className="h-5 w-5 mr-2" />
           Send
         </Button>
       </div>
       
-      <p className="text-xs text-muted-foreground mt-2 text-center">
+      <p className="text-xs text-muted-foreground mt-3 text-center font-medium relative z-10">
         Estimates are approximate. Always verify with your provider.
       </p>
     </div>

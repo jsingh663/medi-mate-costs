@@ -86,11 +86,14 @@ const Index = () => {
   };
 
   return (
-    <div className="flex h-screen w-full bg-background">
-      <div className="flex flex-col flex-1 overflow-hidden">
+    <div className="flex h-screen w-full bg-gradient-to-br from-background via-primary/5 to-accent/5 relative overflow-hidden">
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+      
+      <div className="flex flex-col flex-1 overflow-hidden relative z-10">
         <ChatHeader />
         
-        <div className="flex-1 overflow-y-auto px-6 py-6 space-y-4">
+        <div className="flex-1 overflow-y-auto px-8 py-8 space-y-6">
           {messages.map((message) => (
             <div key={message.id}>
               {message.type === "cost-card" && message.costData ? (
