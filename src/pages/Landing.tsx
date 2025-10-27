@@ -19,10 +19,10 @@ const Landing = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur opacity-40" />
               <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg">
-                <span className="text-primary-foreground font-bold text-xl">M</span>
+                <span className="text-primary-foreground font-bold text-xl">P</span>
               </div>
             </div>
-            <span className="text-2xl font-bold text-foreground">MediMate</span>
+            <span className="text-2xl font-bold text-foreground">PSIP Navigator</span>
           </div>
           <Button 
             variant="ghost" 
@@ -36,18 +36,18 @@ const Landing = () => {
         {/* Hero Section */}
         <div className="max-w-5xl mx-auto text-center mb-20 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 mb-8">
-            <span className="text-sm font-semibold text-primary">Built for Students</span>
+            <span className="text-sm font-semibold text-primary">For Penn Students</span>
           </div>
           
           <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Understand your healthcare costs{" "}
+            Your guide to{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              before you step into the clinic
+              understanding and using your Penn Student Insurance Plan
             </span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Get instant, AI-powered cost estimates for common treatments in your area.
+            Navigating health insurance doesn't have to be confusing. PSIP Navigator is a simple, interactive tool designed to help University of Pennsylvania students make sense of their Penn Student Insurance Plan—what's covered, how to access care, and how to make the most of your benefits.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -78,9 +78,9 @@ const Landing = () => {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 shadow-md">
                 <Zap className="h-7 w-7 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Instant Estimates</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">Understand Your Benefits</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Get cost ranges in seconds. No waiting, no confusion—just clarity.
+                Get a clear breakdown of how your health benefits work. Learn the structure of your plan—deductibles, copays, out-of-pocket maximums—and what those terms really mean for you.
               </p>
             </div>
           </div>
@@ -91,9 +91,9 @@ const Landing = () => {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center mb-4 shadow-md">
                 <Shield className="h-7 w-7 text-accent-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Reliable Data</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">Find Out What's Covered</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Based on real healthcare pricing data from providers in your area.
+                Quickly explore services covered (from annual checkups to specialist visits), prescription coverage (what medications are included and how to fill them), and external benefits like digital health programs and mental health support.
               </p>
             </div>
           </div>
@@ -104,54 +104,46 @@ const Landing = () => {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 shadow-md">
                 <TrendingUp className="h-7 w-7 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Easy to Use</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">Navigate Referrals with Confidence</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Just chat naturally. No forms, no jargon—describe what you need.
+                Not sure when you need a referral? The Navigator helps you understand when to see your PCP first and how to get a referral for specialists, labs, or imaging—saving you time and avoiding unexpected costs.
               </p>
             </div>
           </div>
         </div>
 
-        {/* How It Works */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/80 to-primary/5 backdrop-blur-sm rounded-3xl p-12 border-2 border-primary/20 shadow-xl">
-          <h2 className="text-4xl font-bold text-foreground text-center mb-12">How It Works</h2>
+        {/* Coming Soon */}
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/80 to-primary/5 backdrop-blur-sm rounded-3xl p-12 border-2 border-primary/20 shadow-xl mb-12">
+          <h2 className="text-4xl font-bold text-foreground text-center mb-6">Coming Soon</h2>
+          <p className="text-lg text-muted-foreground text-center mb-8 leading-relaxed">
+            We're actively expanding our platform to cover more of your healthcare needs, including:
+          </p>
           
-          <div className="space-y-8">
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
-                1
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Describe Your Situation</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Tell MediMate what treatment you need or symptoms you're experiencing—just like texting a friend.
-                </p>
-              </div>
+          <div className="space-y-4 mb-8">
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+              <p className="text-muted-foreground leading-relaxed">
+                Cost estimates for appointments, labs, and services
+              </p>
             </div>
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+              <p className="text-muted-foreground leading-relaxed">
+                In-network provider information
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+              <p className="text-muted-foreground leading-relaxed">
+                Guidance on disputing claims
+              </p>
+            </div>
+          </div>
 
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
-                2
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Get Instant Estimates</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Receive cost ranges based on your location, insurance, and local provider data.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
-                3
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Make Informed Decisions</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Compare options, understand cost factors, and choose the best care for your budget.
-                </p>
-              </div>
-            </div>
+          <div className="text-center p-4 bg-accent/10 rounded-2xl border border-accent/20">
+            <p className="text-sm text-muted-foreground">
+              <strong>Note:</strong> Our chatbot doesn't yet support these questions and won't provide responses related to them—stay tuned as we continue to roll out new capabilities.
+            </p>
           </div>
 
           <div className="mt-12 text-center">
@@ -160,14 +152,14 @@ const Landing = () => {
               onClick={() => navigate('/chat')}
               className="bg-gradient-to-r from-primary to-primary-dark hover:shadow-xl transition-all text-lg px-10 py-7 rounded-2xl"
             >
-              Try MediMate Now
+              Try PSIP Navigator Now
             </Button>
           </div>
         </div>
 
         {/* Footer */}
         <footer className="mt-20 text-center text-sm text-muted-foreground">
-          <p>© 2024 MediMate. Built for students, by students.</p>
+          <p>© 2024 PSIP Navigator. Built for Penn students.</p>
         </footer>
       </div>
     </div>
