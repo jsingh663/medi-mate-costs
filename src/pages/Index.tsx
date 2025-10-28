@@ -23,7 +23,7 @@ const Index = () => {
     {
       id: "1",
       role: "ai",
-      content: "Hey there! 👋 I'm MediMate, your healthcare cost companion.\n\nI can help you estimate what your treatment might cost. Do you have any insurance info you'd like to share? (It's optional, but helps me give you better estimates!)",
+      content: "Hey there! 👋 I'm PSIP Navigator, your guide to understanding the Penn Student Insurance Plan.\n\nI can help you understand your benefits, what's covered, and how to navigate your healthcare needs. What would you like to know about your insurance plan?",
       type: "text"
     }
   ]);
