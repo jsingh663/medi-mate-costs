@@ -11,17 +11,17 @@ export const ChatHeader = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur opacity-40" />
           <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg">
-            <span className="text-primary-foreground font-bold text-xl">M</span>
+            <span className="text-primary-foreground font-bold text-xl">P</span>
           </div>
         </div>
         <div>
           <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-            MediMate
+            PSIP Navigator
             <span className="text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 text-primary border border-primary/30">
               Beta
             </span>
           </h1>
-          <p className="text-sm text-muted-foreground font-medium">Healthcare Cost Transparency</p>
+          <p className="text-sm text-muted-foreground font-medium">Penn Student Insurance Plan Guide</p>
         </div>
       </div>
       
