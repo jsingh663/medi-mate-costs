@@ -18,7 +18,7 @@ export const ChatMessage = ({ role, content, timestamp }: ChatMessageProps) => {
         <div className="relative flex-shrink-0 mt-1">
           <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur-sm opacity-30" />
           <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-md">
-            <span className="text-primary-foreground font-bold text-sm">M</span>
+            <span className="text-primary-foreground font-bold text-sm">P</span>
           </div>
         </div>
       )}

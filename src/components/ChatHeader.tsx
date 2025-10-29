@@ -1,38 +1,33 @@
-import { HelpCircle, Settings } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const ChatHeader = () => {
   return (
-    <header className="relative border-b bg-gradient-to-r from-primary/5 via-primary/10 to-accent/5 px-6 py-6 flex items-center justify-between overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-1/3 w-48 h-48 bg-accent/10 rounded-full blur-3xl translate-y-1/2" />
-      
-      <div className="flex items-center gap-4 relative z-10">
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur opacity-40" />
-          <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg">
-            <span className="text-primary-foreground font-bold text-xl">P</span>
+    <div className="relative border-b border-border/50 bg-background px-6 py-4">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-dark rounded-2xl blur opacity-40" />
+            <div className="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-md">
+              <span className="text-primary-foreground font-bold text-lg">P</span>
+            </div>
+          </div>
+          
+          <div>
+            <h1 className="text-lg font-bold text-foreground">
+              PSIP Navigator
+            </h1>
+            <p className="text-xs text-muted-foreground">
+              Ask Nelly about your benefits
+            </p>
           </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-            PSIP Navigator
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 text-primary border border-primary/30">
-              Beta
-            </span>
-          </h1>
-          <p className="text-sm text-muted-foreground font-medium">Penn Student Insurance Plan Guide</p>
-        </div>
-      </div>
-      
-      <div className="flex items-center gap-2 relative z-10">
-        <Button variant="ghost" size="icon" className="rounded-xl hover:bg-primary/10">
-          <HelpCircle className="h-5 w-5 text-primary" />
-        </Button>
-        <Button variant="ghost" size="icon" className="rounded-xl hover:bg-primary/10">
-          <Settings className="h-5 w-5 text-primary" />
+
+        <Button variant="outline" className="gap-2 rounded-lg">
+          <span className="text-sm">Nelly 1.0</span>
+          <ChevronDown className="h-4 w-4" />
         </Button>
       </div>
-    </header>
+    </div>
   );
 };
