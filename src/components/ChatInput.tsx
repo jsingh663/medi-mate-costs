@@ -25,7 +25,7 @@ export const ChatInput = ({ onSend }: ChatInputProps) => {
   };
   
   return (
-    <div className="border-t border-border/50 bg-background px-6 py-4">
+    <div className="border-t border-border/50 bg-card px-6 py-4 shadow-lg">
       <div className="max-w-4xl mx-auto space-y-2">
         <div className="flex gap-3 items-center">
           <Input
@@ -33,14 +33,14 @@ export const ChatInput = ({ onSend }: ChatInputProps) => {
             onChange={(e) => setMessage(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Ask about your health plan benefits..."
-            className="flex-1 h-12 rounded-xl border-input bg-background"
+            className="flex-1 h-12 rounded-xl border-input bg-card"
           />
           
           <Button 
             onClick={handleSend}
             disabled={!message.trim()}
             size="icon"
-            className="h-12 w-12 rounded-xl bg-[#F4B5A0] hover:bg-[#F4B5A0]/90"
+            className="h-12 w-12 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             <Send className="h-5 w-5" />
           </Button>
