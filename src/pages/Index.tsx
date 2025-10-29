@@ -3,7 +3,6 @@ import { ChatHeader } from "@/components/ChatHeader";
 import { ChatMessage } from "@/components/ChatMessage";
 import { CostCard } from "@/components/CostCard";
 import { ChatInput } from "@/components/ChatInput";
-import { InfoPanel } from "@/components/InfoPanel";
 
 interface Message {
   id: string;
@@ -106,8 +105,6 @@ const Index = () => {
         
         <ChatInput onSend={handleSendMessage} />
       </div>
-      
-      <InfoPanel />
     </div>
   );
 };
