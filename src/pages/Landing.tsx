@@ -24,13 +24,6 @@ const Landing = () => {
             </div>
             <span className="text-2xl font-bold text-foreground">PSIP Navigator</span>
           </div>
-          <Button 
-            variant="ghost" 
-            onClick={() => navigate('/chat')}
-            className="rounded-xl hover:bg-primary/10 font-semibold"
-          >
-            Sign In
-          </Button>
         </header>
 
         {/* Hero Section */}
@@ -58,14 +51,6 @@ const Landing = () => {
             >
               Start Chat
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            
-            <Button 
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-7 rounded-2xl border-2 border-primary/30 hover:bg-primary/5"
-            >
-              How It Works
             </Button>
           </div>
         </div>
